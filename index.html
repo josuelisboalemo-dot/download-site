@@ -9,76 +9,94 @@
 body{
     margin:0;
     padding:0;
-    background:linear-gradient(#3c8527,#2d6b1f);
     font-family:Verdana, sans-serif;
-    text-align:center;
+    background:linear-gradient(#0f2027,#203a43,#2c5364);
     color:white;
+    text-align:center;
+    overflow:hidden;
 }
 
 .container{
-    margin-top:120px;
+    margin-top:100px;
+    animation:fadeIn 1.2s ease-in-out;
 }
 
 h1{
-    font-size:42px;
+    font-size:48px;
     text-shadow:4px 4px 0px black;
 }
 
-p{
+.sub{
     font-size:18px;
+    margin-bottom:20px;
 }
 
 .botao{
     display:inline-block;
-    margin-top:30px;
-    padding:20px 45px;
-    font-size:22px;
-    background:#55aa33;
+    margin-top:40px;
+    padding:25px 60px;
+    font-size:24px;
+    background:#2ecc71;
     color:white;
     text-decoration:none;
-    border:4px solid #1e4d15;
+    border:4px solid #145a32;
     box-shadow:6px 6px 0px black;
-    transition:0.2s;
+    transition:0.3s;
 }
 
 .botao:hover{
-    background:#6ecb3c;
-    transform:scale(1.08);
+    background:#58d68d;
+    transform:scale(1.1);
+    box-shadow:8px 8px 0px black;
 }
 
 .info{
-    margin-top:40px;
+    margin-top:30px;
     font-size:14px;
     opacity:0.9;
 }
 
 .footer{
-    margin-top:120px;
-    font-size:13px;
+    position:fixed;
+    bottom:10px;
+    width:100%;
+    font-size:12px;
     opacity:0.7;
 }
+
+@keyframes fadeIn{
+    from{opacity:0; transform:translateY(-20px);}
+    to{opacity:1; transform:translateY(0);}
+}
 </style>
+
+<script>
+function iniciarDownload(){
+    alert("🚀 Download iniciado com sucesso!");
+}
+</script>
 
 </head>
 <body>
 
 <div class="container">
     <h1>🔥 Minecraft WiFi Total 🔥</h1>
-    <p>Download oficial do Script Python</p>
+    <div class="sub">Download Oficial - Versão 1.0</div>
 
-    <a class="botao" href="minecraft_lan_wifitotal_.py" download>
-        ⬇ BAIXAR SCRIPT (.py)
+    <a class="botao" href="minecraft_wifitotal.zip" onclick="iniciarDownload()" download>
+        ⬇ BAIXAR AGORA (.zip)
     </a>
 
     <div class="info">
-        ✔ Versão 1.0<br>
-        ✔ Arquivo original<br>
-        ✔ Download direto
+        ✔ Arquivo Compactado<br>
+        ✔ Download Direto<br>
+        ✔ Atualizado 2026<br>
+        ✔ Seguro
     </div>
+</div>
 
-    <div class="footer">
-        © 2026 Minecraft WiFi Total - Todos os direitos reservados
-    </div>
+<div class="footer">
+© 2026 Minecraft WiFi Total - Todos os direitos reservados
 </div>
 
 </body>
